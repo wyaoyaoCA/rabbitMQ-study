@@ -14,10 +14,18 @@
         <module>03-rabbitmq-fanout</module>
         <module>04-rabbitmq-route</module>
         <module>05-rabbitmq-topic</module>
+        <module>06-rabbitmq-springboot</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.3.5.RELEASE</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
             <!--rabbitmq客户端-->
             <dependency>
                 <groupId>com.rabbitmq</groupId>
